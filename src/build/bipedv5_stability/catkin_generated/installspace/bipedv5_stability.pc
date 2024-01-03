@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: bipedv5_stability
+Description: Description of bipedv5_stability
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

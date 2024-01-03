@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bipedv5_stability</name>
+  <version>0.0.0</version>
+  <description>The lipm_control package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="master@todo.todo">master</maintainer>
+
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+
+  <build_depend>lipm_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>whole_body_ik_msgs</build_depend>
+  <build_depend>bipedv5_wbc</build_depend>
+
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>lipm_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>actionlib</build_export_depend>
+  <build_export_depend>whole_body_ik_msgs</build_export_depend>
+  <build_export_depend>bipedv5_wbc</build_export_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>lipm_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>whole_body_ik_msgs</exec_depend>
+  <exec_depend>bipedv5_wbc</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

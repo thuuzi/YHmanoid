@@ -1,0 +1,8 @@
+prefix=/home/jack/bipedv5/src/build/devel
+
+Name: bipedv5_plan
+Description: Description of bipedv5_plan
+Version: 1.0.0
+Cflags: -I/home/jack/bipedv5/src/bipedv5_plan/include -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/home/jack/anaconda3/envs/py38/include
+Libs: -L${prefix}/lib -llipm_motion
+Requires: roscpp std_msgs nav_msgs geometry_msgs lipm_msgs

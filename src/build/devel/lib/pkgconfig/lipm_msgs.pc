@@ -1,0 +1,8 @@
+prefix=/home/jack/bipedv5/src/build/devel
+
+Name: lipm_msgs
+Description: Description of lipm_msgs
+Version: 1.0.0
+Cflags: -I/home/jack/bipedv5/src/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs nav_msgs geometry_msgs message_runtime

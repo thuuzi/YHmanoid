@@ -1,0 +1,8 @@
+prefix=/home/jack/bipedv5/src/build/devel
+
+Name: whole_body_ik_msgs
+Description: Description of whole_body_ik_msgs
+Version: 1.0.0
+Cflags: -I/home/jack/bipedv5/src/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs geometry_msgs sensor_msgs nav_msgs message_runtime

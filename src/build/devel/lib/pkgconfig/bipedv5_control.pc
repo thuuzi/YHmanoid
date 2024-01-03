@@ -1,0 +1,8 @@
+prefix=/home/jack/bipedv5/src/build/devel
+
+Name: bipedv5_control
+Description: Description of bipedv5_control
+Version: 1.0.0
+Cflags: -I/home/jack/bipedv5/src/bipedv5_control/include
+Libs: -L${prefix}/lib -lbipedv5_control
+Requires: std_msgs sensor_msgs actuatorcontroller_ros

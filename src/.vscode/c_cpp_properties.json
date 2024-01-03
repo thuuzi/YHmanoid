@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jack/bipedv3/devel/include/**",
+        "/home/jack/biped/devel/include/**",
+        "/home/jack/towrros/devel/include/**",
+        "/home/jack/serow/devel/include/**",
+        "/usr/local/include/**",
+        "/usr/local/include/**",
+        "/opt/ros/noetic/include/**",
+        "/opt/openrobots/include/**",
+        "/home/jack/bipedv3/src/actuatorcontroller_ros/include/**",
+        "/home/jack/bipedv3/src/biped_control/include/**",
+        "/home/jack/bipedv4/src/bipedv4/include/**",
+        "/home/jack/bipedv4/src/bipedv4_control/include/**",
+        "/home/jack/bipedv4/src/bipedv4_plan/include/**",
+        "/home/jack/serow/src/lipm_control/include/**",
+        "/home/jack/serow/src/lipm_motion/include/**",
+        "/home/jack/serow/src/mit_humanoid/include/**",
+        "/home/jack/serow/src/raisim_ros/include/**",
+        "/home/jack/serow/src/serow/include/**",
+        "/home/jack/serow/src/serow_utils/include/**",
+        "/home/jack/towrros/src/towr/towr/include/**",
+        "/home/jack/towrros/src/towr/towr_ros/include/**",
+        "/home/jack/serow/src/whole_body_ik/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

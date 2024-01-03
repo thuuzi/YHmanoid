@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: bipedv5
+Description: Description of bipedv5
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

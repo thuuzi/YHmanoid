@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bipedv5_bringup</name>
+  <version>1.5.2</version>
+  <description>
+    Launch.
+  </description>
+  <maintainer email="171146193@qq.com">HG</maintainer>
+  <author>HG</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+
+  </export>
+</package>

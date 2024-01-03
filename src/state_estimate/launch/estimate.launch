@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="state_estimate" type="multisensor_fusion" name="multisensor_fusion" respawn="false" output="screen">
+ 	<!-- Load configurations from YAML file to parameter server -->
+   	 <rosparam file="$(find state_estimate)/config/multisensor_fusion_params.yaml" command="load"/> 
+  </node>
+  <node pkg = "rviz" type = "rviz" respawn = "false" name = "rviz" output = "screen" args ="-d $(find state_estimate)/share/hse.rviz"> </node>
+</launch>

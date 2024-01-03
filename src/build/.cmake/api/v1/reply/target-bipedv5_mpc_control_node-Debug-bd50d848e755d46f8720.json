@@ -1,0 +1,713 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "devel/lib/bipedv5_stability/bipedv5_mpc_control_node"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"add_compile_options",
+			"add_definitions",
+			"include",
+			"find_package",
+			"configure_shared_library_build_settings",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"bipedv5_stability/CMakeLists.txt",
+			"/opt/ros/noetic/share/rosconsole/cmake/rosconsole-extras.cmake",
+			"/opt/ros/noetic/share/rosconsole/cmake/rosconsoleConfig.cmake",
+			"/opt/ros/noetic/share/roscpp/cmake/roscppConfig.cmake",
+			"/opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake",
+			"/opt/ros/noetic/share/catkin/cmake/tools/libraries.cmake",
+			"/opt/ros/noetic/share/catkin/cmake/all.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 7
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 197,
+				"parent" : 9
+			},
+			{
+				"file" : 2,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 222,
+				"parent" : 11
+			},
+			{
+				"file" : 1,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 13
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 58,
+				"parent" : 15
+			},
+			{
+				"file" : 4,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 20,
+				"parent" : 17
+			},
+			{
+				"file" : 6,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 174,
+				"parent" : 19
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 18,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g  "
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-std=c++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "BOOST_MPL_LIMIT_LIST_SIZE=30"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_MPL_LIMIT_VECTOR_SIZE=30"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_SYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HPP_FCL_HAS_OCTOMAP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "HPP_FCL_HAVE_OCTOMAP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "OCTOMAP_MAJOR_VERSION=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "OCTOMAP_MINOR_VERSION=9"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "OCTOMAP_PATCH_VERSION=8"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "PINOCCHIO_WITH_HPP_FCL"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "PINOCCHIO_WITH_URDFDOM"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "ROSCONSOLE_BACKEND_LOG4CXX"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "ROS_BUILD_SHARED_LIBS=1"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "ROS_PACKAGE_NAME=\"bipedv5_stability\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 23,
+					"path" : "/home/jack/bipedv5/src/bipedv5_stability/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/jack/bipedv5/src/build/devel/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/jack/bipedv5/src/bipedv5_wbc/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/usr/include/eigen3"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/opt/ros/noetic/include"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/home/jack/anaconda3/envs/py38/include/eigen3"
+				},
+				{
+					"backtrace" : 23,
+					"isSystem" : true,
+					"path" : "/home/jack/anaconda3/envs/py38/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "lipm_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "roscpp_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "roscpp_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rosgraph_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nav_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "std_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nav_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nav_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "std_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "geometry_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "std_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "std_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "geometry_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "geometry_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "geometry_msgs_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "roscpp_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nav_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rosgraph_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "nav_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "std_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "roscpp_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "actionlib_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rosgraph_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rosgraph_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lipm_msgs_generate_messages_eus::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lipm_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "geometry_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "roscpp_generate_messages_nodejs::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lipm_msgs_generate_messages_cpp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "rosgraph_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "lipm_msgs_generate_messages_lisp::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor_msgs_generate_messages_cpp::@676f6470a8868d354018"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor_msgs_generate_messages_py::@676f6470a8868d354018"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor_msgs_generate_messages_eus::@676f6470a8868d354018"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor_msgs_generate_messages_lisp::@676f6470a8868d354018"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "sensor_msgs_generate_messages_nodejs::@676f6470a8868d354018"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "whole_body_ik_msgs_generate_messages_py::@ef2c406b0e8516480d24"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "whole_body_ik_msgs_generate_messages_lisp::@ef2c406b0e8516480d24"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "whole_body_ik_msgs_generate_messages_nodejs::@ef2c406b0e8516480d24"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "whole_body_ik_msgs_generate_messages_eus::@ef2c406b0e8516480d24"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "whole_body_ik_msgs_generate_messages_cpp::@ef2c406b0e8516480d24"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "bipedv5_wbc::@5da82c23ab071d166196"
+		}
+	],
+	"id" : "bipedv5_mpc_control_node::@1c781f87d3b1c9ddfaef",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/jack/bipedv5/src/build/devel/lib:/opt/ros/noetic/lib:/home/jack/anaconda3/envs/py38/lib:/opt/ros/noetic/lib/x86_64-linux-gnu",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../devel/lib/libbipedv5_wbc.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libpinocchio.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_filesystem",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_serialization",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_system",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libactionlib.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libroscpp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/librosconsole.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/librosconsole_log4cxx.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/librosconsole_backend_interface.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-llog4cxx",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libxmlrpcpp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libroscpp_serialization.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/librostime.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/libcpp_common.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_chrono.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_serialization.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/opt/ros/noetic/lib/libpinocchio.so.2.6.17",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_filesystem.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_system.so.1.78.0",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lurdfdom_sensor",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lurdfdom_model_state",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lurdfdom_model",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lurdfdom_world",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/x86_64-linux-gnu/libhpp-fcl.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_serialization.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/jack/anaconda3/envs/py38/lib/libboost_chrono.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/liboctomap.so.1.9.8",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/noetic/lib/liboctomath.so.1.9.8",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "bipedv5_mpc_control_node",
+	"nameOnDisk" : "bipedv5_mpc_control_node",
+	"paths" : 
+	{
+		"build" : "bipedv5_stability",
+		"source" : "bipedv5_stability"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "bipedv5_stability/src/control_mpc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "bipedv5_stability/src/postureStabilizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "bipedv5_stability/src/ZMPDistributor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "bipedv5_stability/src/LeakyIntegrator.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,0 +1,14 @@
+<launch>
+  
+    <node pkg="bipedv5_control" name="drive" type="drive" output="screen">
+      <rosparam file="$(find bipedv5_control)/config/biped_static_params.yaml" command="load"/> 
+    </node>
+    <node name="innfos_actuator"  pkg="actuatorcontroller_ros"  type="innfos_actuator" output="screen">
+       <param name="innfos_no_param" value="true" type="bool"/>
+    <param name="innfos_fixed_rate" value="100" type="int"/>
+    <param name="innfos_use_cvp" value="true" type="bool"/>
+  </node>
+      <!-- <include file="$(find bipedv5)/launch/display.launch" />
+      <include file="$(find orb_slam3_ros)/launch/d435.launch" />
+    <node pkg = "bipedv5_control" type = "odom" name = "odom" output = "screen" /> -->
+</launch>

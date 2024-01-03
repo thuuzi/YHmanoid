@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: lipm_msgs
+Description: Description of lipm_msgs
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs nav_msgs geometry_msgs message_runtime

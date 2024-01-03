@@ -1,0 +1,443 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/lipm_msgs/cmake/lipm_msgs-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"lipm_msgs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 909,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 926,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1056,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 916,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1059,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 940,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 948,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 928,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1050,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 936,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 932,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 918,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 920,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 922,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 930,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 924,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 934,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 938,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 942,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 944,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1053,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 946,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 950,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanActionGoal::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "actionlib_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "_lipm_msgs_generate_messages_check_deps_TrajectoryPoints::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "nav_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlActionGoal::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlResult::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanActionResult::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "std_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanFeedback::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanGoal::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "_lipm_msgs_generate_messages_check_deps_StepTarget::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "_lipm_msgs_generate_messages_check_deps_FootStepPlan::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MPCTraj::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanActionFeedback::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanAction::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionPlanResult::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlAction::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlActionResult::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlActionFeedback::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "geometry_msgs_generate_messages_py::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlGoal::@1f8d11b84a3f8ead7534"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "_lipm_msgs_generate_messages_check_deps_MotionControlFeedback::@1f8d11b84a3f8ead7534"
+		}
+	],
+	"id" : "lipm_msgs_generate_messages_py::@1f8d11b84a3f8ead7534",
+	"name" : "lipm_msgs_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "lipm_msgs",
+		"source" : "lipm_msgs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/lipm_msgs/CMakeFiles/lipm_msgs_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lipm_msgs/CMakeFiles/lipm_msgs_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_TrajectoryPoints.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_StepTarget.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_FootStepPlan.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MPCTraj.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanAction.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanActionGoal.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanActionResult.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanActionFeedback.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanGoal.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanResult.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionPlanFeedback.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlAction.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlActionGoal.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlActionResult.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlActionFeedback.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlGoal.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlResult.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/_MotionControlFeedback.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/lipm_msgs/msg/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

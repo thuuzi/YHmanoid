@@ -1,0 +1,10 @@
+<launch>
+  
+     <include file="$(find bipedv5)/launch/drive.launch" />
+      <include file="$(find bipedv5_stability)/launch/mpc_control.launch" />
+      <node pkg = "bipedv5_plan"  type = "bipedv5_command"  name = "bipedv5_plan" output = "screen" respawn = "false">
+	   	 <rosparam file="$(find bipedv5_plan)/config/bipedv5_mpc_params.yaml" command="load"/> 
+	</node>
+	<node pkg = "rviz" type = "rviz" respawn = "false" name = "rviz" output = "screen" args ="-d $(find bipedv5_plan)/rviz/bipedv5_plan.rviz"> </node>
+
+</launch>

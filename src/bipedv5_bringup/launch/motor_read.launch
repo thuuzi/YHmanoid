@@ -1,0 +1,11 @@
+<launch>
+  
+    <node pkg="bipedv5_control" name="motor_read" type="motor_read" output="screen">
+      </node>
+    <node name="innfos_actuator"  pkg="actuatorcontroller_ros"  type="innfos_actuator" output="screen">
+       <param name="innfos_no_param" value="true" type="bool"/>
+    <param name="innfos_fixed_rate" value="500" type="int"/>
+    <param name="innfos_use_cvp" value="true" type="bool"/>
+  </node>
+    <include file="$(find bipedv5)/launch/display.launch" />
+</launch>

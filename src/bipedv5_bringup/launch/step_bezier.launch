@@ -1,0 +1,12 @@
+<launch>
+  
+    <node pkg="bipedv5_control" name="drive" type="drive" output="screen">
+      <rosparam file="$(find bipedv5_control)/config/biped_bezier_params.yaml" command="load"/> 
+    </node>
+    <node name="innfos_actuator"  pkg="actuatorcontroller_ros"  type="innfos_actuator" output="screen">
+       <param name="innfos_no_param" value="true" type="bool"/>
+    <param name="innfos_fixed_rate" value="10" type="int"/>
+    <param name="innfos_use_cvp" value="true" type="bool"/>
+  </node>
+     
+</launch>

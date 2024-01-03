@@ -1,0 +1,48 @@
+<launch>
+
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    <!-- Debug mode will hung up the robot, use "true" or "false" to switch it. -->
+    <arg name="user_debug" default="false"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+      <arg name="debug" value="$(arg debug)"/>
+      <arg name="gui" value="$(arg gui)"/>
+      <arg name="paused" value="$(arg paused)"/>
+      <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+      <arg name="headless" value="$(arg headless)"/>
+  </include>
+    
+     <!-- <include
+    file="$(find gazebo_ros)/launch/empty_world.launch" >
+    <arg name="world_name" value="$(find bipedv5)/world/stair.world" />
+  </include> -->
+  
+
+   <!-- convert joint states to TF transforms for rviz, etc -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"
+          respawn="false" output="screen">
+        <remap from="/joint_states" to="/bipedv5/joint_states" />
+    </node>
+  <node
+    name="spawn_model" pkg="gazebo_ros" type="spawn_model" output="screen"
+    args="-param robot_description -urdf -model bipedv5 
+    -z 0.9 -R 0.0 -P -0.0 -Y 0.0"
+     />
+  <param name="robot_description" command="$(find xacro)/xacro $(find bipedv5)/xacro/robot.xacro
+  DEBUG:=$(arg user_debug)"/>
+  
+
+    <rosparam file="$(find bipedv5)/config/joint_params.yaml" command="load"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+	output="screen" ns="/bipedv5" args="joint_state_controller  ly lh lkp lk lap la ry rh rkp rk rap ra"/>
+
+   <node name="sensor" pkg="bipedv5" type="sensor"  output="screen"/> 
+
+    <node name="drive_gz" pkg="bipedv5" type="drive_gz"  output="screen">
+      <rosparam file="$(find bipedv5)/config/drive_gz.yaml" command="load"/> 
+    </node> 
+</launch>

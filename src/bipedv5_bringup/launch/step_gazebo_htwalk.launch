@@ -1,0 +1,7 @@
+<launch>
+  
+    <node pkg="bipedv5_control" name="drive_gazebo" type="drive_gazebo" output="screen">
+      <rosparam file="$(find bipedv5_control)/config/biped_gazebo_htwalk_params.yaml" command="load"/> 
+    </node>
+    <include file="$(find bipedv5)/launch/gazebo.launch" />
+</launch>

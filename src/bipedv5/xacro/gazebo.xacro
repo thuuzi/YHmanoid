@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<robot>
+     <gazebo>
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"><origin rpy="0 0 0" xyz="0.0 0.0 -0.08"/>
+      <robotNamespace>/bipedv5</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+
+
+   <gazebo reference="left_ankle_Link">
+      <mu1>3</mu1>
+        <mu2>3</mu2>
+        <kp  value="1000000.0"/>
+        <kd  value="1000.0"/>
+    <self_collide>0</self_collide>
+      <sensor name="bumper_bumper_sensor" type="contact">
+        <visualize>true</visualize>
+        <always_on>true</always_on>
+        <update_rate>100.0</update_rate>
+        <contact>
+            <collision>left_ankle_Link_collision</collision>
+        </contact>
+        <plugin name="gazebo_ros_bumper_controller" filename="libgazebo_ros_bumper.so">
+            <bumperTopicName>bipedv5/left_contact</bumperTopicName>
+            <frameName>left_ankle_Link</frameName>
+        </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="right_ankle_Link">
+     <mu1>3</mu1>
+        <mu2>3</mu2>
+        <kp  value="1000000.0"/>
+        <kd  value="1000.0"/>
+    <self_collide>0</self_collide>
+      <sensor name="bumper_bumper_sensor" type="contact">
+        <visualize>true</visualize>
+        <always_on>true</always_on>
+        <update_rate>100.0</update_rate>
+        <contact>
+            <collision>right_ankle_Link_collision</collision>
+        </contact>
+        <plugin name="gazebo_ros_bumper_controller" filename="libgazebo_ros_bumper.so">
+            <bumperTopicName>bipedv5/right_contact</bumperTopicName>
+            <frameName>right_ankle_Link</frameName>
+        </plugin>
+    </sensor>
+  </gazebo>
+
+
+   <gazebo reference="base_link">
+    <gravity>true</gravity>
+    <sensor name="bipedv5_imu" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100.0</update_rate>
+      <visualize>false</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>bipedv5/imu</topicName>
+        <bodyName>base_link</bodyName>
+        <updateRateHZ>100.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+  
+  <gazebo reference="la">
+     <provideFeedback>true</provideFeedback>
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+  </gazebo>
+  <gazebo>
+    <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
+      <updateRate>100.0</updateRate>
+      <topicName>bipedv5/left_foot_ft</topicName>
+      <jointName>la</jointName>
+    </plugin>
+  </gazebo>
+  <gazebo reference="ra">
+     <provideFeedback>true</provideFeedback>
+      <disableFixedJointLumping>true</disableFixedJointLumping>
+  </gazebo>
+    <gazebo>
+    <plugin name="ft_sensor" filename="libgazebo_ros_ft_sensor.so">
+      <updateRate>100.0</updateRate>
+      <topicName>bipedv5/right_foot_ft</topicName>
+      <jointName>ra</jointName>
+    </plugin>
+  </gazebo>
+
+</robot>

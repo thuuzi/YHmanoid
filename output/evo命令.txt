@@ -1,0 +1,4 @@
+APE:  evo_ape tum base_gt.txt base_ekf.txt -r trans_part -va --plot --plot_mode xyz 
+ evo_ape tum groundtruth.txt CameraTrajectory.txt -r trans_part -va --plot --plot_mode xyz 
+ 画轨迹
+ evo_traj tum base_ekf.txt  --ref=base_gt.txt -p --plot_mode=xyz --align --correct_scale

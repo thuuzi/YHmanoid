@@ -1,0 +1,11 @@
+<launch>
+  <arg name="user_debug" default="false"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(find bipedv5)/xacro/robot.xacro
+  DEBUG:=$(arg user_debug)"/>
+  
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"
+        respawn="false" output="screen">
+      <remap from="/joint_states" to="/bipedv5/joint_states" />
+    </node>
+      <!-- <node pkg = "rviz" type = "rviz" respawn = "false" name = "rviz" output = "screen" args ="-d $(find bipedv5)/config/display.rviz"> </node> -->
+</launch>

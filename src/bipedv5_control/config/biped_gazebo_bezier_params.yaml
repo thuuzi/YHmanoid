@@ -1,0 +1,46 @@
+#步态参数
+step_period : 1.5  #步态周期
+double_support_time : 0.5 #双腿支撑时长
+step_len : 0.14    #步长
+step_sa : 0.08      #侧摆幅度
+ini_height : -0.5    #初始高度
+step_height : 0.06    #抬腿高度
+ini_len : -0.01    #初始x位置
+StepNum : 1000
+#运动学杆件长度
+L1 : 0.275
+L2 : 0.275
+#轨迹插值时间
+pause_time : 1000  #循环sleep时间(微秒
+dt : 0.001
+#模式选择
+echo : true
+setzero: false
+ini: true
+si: false
+static: false
+Heel_Toe_walk: false
+
+
+# 快走的一组参数
+# step_period : 0.9  #步态周期
+# double_support_time : 0.4 #双腿支撑时长
+# step_len : 0.1    #步长
+# step_sa : 0.04       #侧摆幅度
+# ini_height : -0.5    #初始高度
+# step_height : 0.05    #抬腿高度
+# ini_len : -0.02    #初始x位置
+# StepNum : 1000
+# #运动学杆件长度
+# L1 : 0.275
+# L2 : 0.275
+# #轨迹插值时间
+# pause_time : 1000  #循环sleep时间(微秒
+# dt : 0.001
+# #模式选择
+# echo : false
+# setzero: false
+# ini: true
+# si: false
+# static: false
+# Heel_Toe_walk: false

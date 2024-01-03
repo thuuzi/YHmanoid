@@ -1,0 +1,8 @@
+prefix=/home/jack/bipedv5/src/build/devel
+
+Name: bipedv5_wbc
+Description: Description of bipedv5_wbc
+Version: 1.0.0
+Cflags: -I/home/jack/bipedv5/src/bipedv5_wbc/include -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/opt/ros/noetic/include -I/usr/local/include/ -I/usr/include/eigen3
+Libs: -L${prefix}/lib -lbipedv5_wbc /opt/ros/noetic/lib/libpinocchio.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_serialization.so /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: roscpp sensor_msgs actionlib whole_body_ik_msgs

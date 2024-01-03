@@ -1,0 +1,138 @@
+#Robot Frames (CHECK URDF)
+base_link: "base_link"
+lfoot: "left_ankle_Link"
+rfoot: "right_ankle_Link"
+modelname: "/home/jack/bipedv5/src/bipedv5/urdf/bipedv5.urdf"
+
+#ROS Topic Names
+
+useLegOdom: false
+#odom_topic: "/svo/odom/0"
+odom_topic: "/bipedv5/odom"
+imu_topic: "/bipedv5/imu"
+joint_state_topic: "/bipedv5/js"
+lfoot_force_torque_topic: "/bipedv5/LLeg/force_torque_states"
+rfoot_force_torque_topic: "/bipedv5/RLeg/force_torque_states"
+
+
+#Ground-Truth
+ground_truth: true
+ground_truth_odom_topic:  "/bipedv5/base_gt"
+ground_truth_com_topic:  "/bipedv5/CoM"
+T_B_GT: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0 ,0, 1]
+
+comp_with: true
+#comp_with_odom0_topic: "/svo/odom/0"
+comp_with_odom0_topic: "/bipedv5/odom"
+support_idx_provided: false
+support_idx_topic: "/sp"
+
+#To publish relative data
+debug_mode: true
+rviz_view: true
+
+
+#TF from IMU to Body 
+#For nao imu (onboard IMU)
+T_B_A: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 ,1 ,0, 0, 0, 0 ,0, 1]  #加速度计
+T_B_G: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 ,1 ,0, 0, 0, 0 ,0, 1]    #陀螺仪
+#TF from F/T to Left Foot
+T_FT_LL: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 , 1 , 0, 0, 0 ,0, 1]
+#TF from F/T to Right Foot
+T_FT_RL: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 , 1 , 0, 0, 0 ,0, 1]
+#TF from External Odom to Body only if useLegOdom is false
+#T_B_P: [0, 1, 0, 0, -1, 0, 0, 0, 0, 0 ,1 ,0, 0, 0, 0, 1] #VINS
+T_B_P: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 ,1 ,0, 0, 0, 0 , 1] #rf2o
+#T_B_P: [0, 0, 1, 0, -1, 0, 0, 0, 0, -1 ,0 ,0, 0, 0, 0, 1] #SVO without imu
+
+#ROS Topic Frequencies in Hz
+imu_topic_freq: 100
+joint_topic_freq: 100
+fsr_topic_freq: 100  
+buffer_num: 10
+##Schmitt Trigger - Contact Classifier
+LegUpThres: 10 #Schmitt Trigger High Threshold in Newtons (N)
+LegLowThres: 10 #Schmitt Trigger Low Threshold in Newtons (N)
+LosingContact: 5    #用于质心计算
+StrikingContact: 60
+
+
+#Joint Velocity Estimation
+computeJointVelocity: false #直接获取速度
+joint_cutoff_freq: 16.0
+joint_noise_density: 0.05
+#Mahony Filter for attitude
+useMahony: false
+Mahony_Kp: 0.5
+Mahony_Ki: 0.1
+#Madgwick Filter for attitude if useMahony is false
+Madgwick_gain: 0.01
+
+
+#Leg Odometry Coefficients
+Tau0: 1.0
+Tau1: 0.0
+medianWindow: 10
+
+mass: 25.0  #robot mass with realsense and IMU
+
+#浮动基估计EKF参数
+useContactEKF: false
+useInIMUEKF: false
+useIMUEKF: true
+#Process Noise STDs
+accelerometer_bias_random_walk:  0.05 #m/s^2
+gyroscope_bias_random_walk: 0.05 # rad/s
+accelerometer_noise_density: 0.1 #m/s^2 
+gyroscope_noise_density: 0.05 #rad/s 
+#conEKF噪声
+contact_position_random_walk: 0.01
+contact_orientation_random_walk: 0.01
+#conEKF预测噪声odom
+contact_position_noise_density: 0.01
+contact_orientation_noise_density: 0.01
+#里程计噪声:
+odom_position_noise_density_x: 5.0e-04 #m
+odom_orientation_noise_density: 5.0e-02 #rad
+useOutlierDetection: false
+#mahalanobis_TH: 9
+mahalanobis_TH: -1
+#IMU 初始偏差
+bias_ax: 0.0 #m/s^2
+bias_ay: 0.0  #m/s^2
+bias_az: 0.0 #m/s^2
+bias_gx: 0.0 #rad
+bias_gy: 0.0  #rad
+bias_gz: 0.0 #rad
+calibrateIMUbiases: false 
+maxImuCalibrationCycles: 500
+#Filter Params
+gravity: 9.80 #gravity constant (m/s^2)
+# CoM Extended Kalman Filter (EKF)
+# To estimate:
+# CoM 3-D Position/Velocity
+# 3-D External Forces on the CoM
+estimateCoM: true   #Use the CoM EKF
+
+#CoM估计器参数
+#Process Noise
+com_position_random_walk: 1.0e-4 #in m
+com_velocity_random_walk: 5.0e-3 #in m/s
+external_force_random_walk: 1.0      #in Newtons
+#Measurment Noise
+com_position_noise_density: 1.0e-4  #CoM position in m
+com_acceleration_noise_density: 2.5e-01 #CoM Acceleration in m/s^2
+#Initial errors in External Forces
+bias_fx: 0.0  #in Newtons
+bias_fy: 0.0
+bias_fz: 0.0
+#Gyro LPF
+useGyroLPF: false
+#Cutt-off Frequencies
+gyro_cut_off_freq: 10.0  #Only if useGyroLPF is true
+#Gyro Moving Average Filter 
+maWindow: 14 #用于质心估计的角加速度滤波
+#Filter Params
+Ixx : 0.0050623407587  #torso inertia around x
+Iyy : 0.0048801358789  #torso inetria around y
+Izz : 0.001610300038   #torso inertia around z

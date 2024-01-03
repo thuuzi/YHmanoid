@@ -1,0 +1,120 @@
+#Robot Frames
+base_link: "base_link"
+lfoot: "left_foot_dummy_Link"
+rfoot: "right_foot_dummy_Link"
+modelname: "/home/jack/bipedv5/src/bipedv5/xacro/robot.xacro"
+save_data: false
+#ROS Topic Names
+
+odom_topic: "/orb_slam3/camera_pose"
+imu_topic: "/bipedv5/imu"
+joint_state_topic: "/bipedv5/js"
+lfoot_force_torque_topic: "/bipedv5/LLeg/force_torque_states"
+rfoot_force_torque_topic: "/bipedv5/RLeg/force_torque_states"
+
+
+#Ground-Truth
+ground_truth: true
+ground_truth_odom_topic:  "/bipedv5/odom"
+ground_truth_com_topic:  "/bipedv5/CoM"
+
+#To publish relative data
+debug_mode: true
+rviz_view: true
+
+
+#TF from IMU to Body 
+#For nao imu (onboard IMU)
+T_B_A: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 ,1 ,0, 0, 0, 0 ,0, 1]  #加速度计
+T_B_G: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 ,1 ,0, 0, 0, 0 ,0, 1]    #陀螺仪
+#TF from F/T to Left Foot
+T_FT_LL: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 , 1 , 0, 0, 0 ,0, 1]
+#TF from F/T to Right Foot
+T_FT_RL: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0 , 1 , 0, 0, 0 ,0, 1]
+#TF from External Odom to Body
+# T_B_P: [1, 0, 0, 0,   0, 0, -1, 0,   0, 1 ,0 ,0,   -0.073, -0.036, 0 , 1] #base到相机的变换
+T_B_P: [1, 0, 0, 0,   0, 1, 0, 0,   0, 0 ,1 ,0,   0, 0, 0 , 1] #base到相机的变换(已经将slam输出转换到世界坐标系了)
+
+#ROS Topic Frequencies in Hz
+freq: 1000   #循环频率
+imu_topic_freq: 100
+joint_topic_freq: 500
+fsr_topic_freq: 100  
+buffer_num: 10
+
+
+LosingContact: 5  
+
+
+#关节速度估计参数
+computeJointVelocity: true #直接获取速度
+joint_cutoff_freq: 16.0
+joint_noise_density: 0.05   #关节位置噪声
+#Mahony法初步处理IMU
+useMahony: false
+Mahony_Kp: 0.5
+Mahony_Ki: 0.1
+#Madgwick法初步处理IMU
+useMadgwick: false
+Madgwick_gain: 0.01
+#采用imuEKF获得的姿态
+useEKFR: true
+
+#Leg Odometry参数
+Tau0: 1.0 
+Tau1: 1.0 
+medianWindow: 1
+
+mass: 24.87  #robot mass without realsense and IMU
+
+#浮动基估计EKF参数
+#IMU噪声
+accelerometer_bias_random_walk:  0.01 #m/s^2    #IMU加速度计偏差的噪声方差
+gyroscope_bias_random_walk: 0.001 # rad/s     #IMU陀螺仪偏差的噪声方差
+accelerometer_noise_density: 0.05 #m/s^2     #IMU加速度计噪声方差
+gyroscope_noise_density: 0.005 #rad/s         #IMU陀螺仪噪声方差
+#运动学计算速度噪声
+velocity_noise_density_x: 0.05 #m/s
+velocity_noise_density_y: 0.05 #m/s
+velocity_noise_density_z: 0.05 #m/s
+#视觉里程计噪声:
+odom_position_noise_density_x: 0.01 #m
+odom_position_noise_density_y: 0.4 #m
+odom_position_noise_density_z: 0.008 #m
+odom_orientation_noise_density: 0.008 #rad
+useOutlierDetection: false
+#mahalanobis_TH: 9
+mahalanobis_TH: -1
+#IMU 初始偏差
+bias_ax: 0.0 #m/s^2
+bias_ay: 0.0  #m/s^2
+bias_az: 0.0 #m/s^2
+bias_gx: 0.0 #rad
+bias_gy: 0.0  #rad
+bias_gz: 0.0 #rad
+calibrateIMUbiases: true
+maxImuCalibrationCycles: 300
+gravity: 9.8 #gravity constant (m/s^2)
+
+#CoM估计器参数
+estimateCoMwithEKF: false   #采用非线性或线性KF
+#预测噪声
+com_position_random_walk: 0.1 #in m
+com_velocity_random_walk: 0.5 #in m/s
+external_force_random_walk: 0.5      #in Newtons
+#测量噪声
+com_position_noise_density: 0.0002  #CoM position in m
+com_acceleration_noise_density: 2.0 #CoM Acceleration in m/s^2
+#初始外力偏差
+calibrateFc: true
+maxFcCalibrationCycles: 300
+bias_fx: 0.0  #in Newtons
+bias_fy: 0.0
+bias_fz: 0.0
+#角加速度滤波器选择
+useGyroLPF: true
+#Cutt-off Frequencies
+gyro_cut_off_freq: 10.0  #Only if useGyroLPF is true
+#Gyro Moving Average Filter 
+maWindow: 10 #用于质心估计的角加速度滤波
+

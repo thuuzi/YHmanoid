@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: bipedv5_control
+Description: Description of bipedv5_control
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lbipedv5_control
+Requires: std_msgs sensor_msgs actuatorcontroller_ros

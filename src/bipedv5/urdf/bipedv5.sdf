@@ -1,0 +1,635 @@
+<sdf version='1.7'>
+  <model name='bipedv5'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 -0.088578 0 -0 0</pose>
+        <mass>6.04</mass>
+        <inertia>
+          <ixx>0.011504</ixx>
+          <ixy>1.2206e-11</ixy>
+          <ixz>4.4303e-12</ixz>
+          <iyy>0.026033</iyy>
+          <iyz>-8.6187e-14</iyz>
+          <izz>0.028285</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 -0.08 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.35 0.15 0.15</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='ly' type='revolute'>
+      <pose relative_to='base_link'>-0.1025 0 -0.162 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>left_yaw_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_yaw_Link'>
+      <pose relative_to='ly'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.002268 -0 -0.043526 0 -0 0</pose>
+        <mass>1.2202</mass>
+        <inertia>
+          <ixx>0.0010452</ixx>
+          <ixy>-7.8902e-18</ixy>
+          <ixz>3.289e-05</ixz>
+          <iyy>0.0011182</iyy>
+          <iyz>-2.6039e-18</iyz>
+          <izz>0.0010959</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_yaw_Link_collision'>
+        <pose>0 0 -0.007 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.08 0.03</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_yaw_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_yaw_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lh' type='revolute'>
+      <pose relative_to='left_yaw_Link'>-0.0565 0 -0.054 0 -0 0</pose>
+      <parent>left_yaw_Link</parent>
+      <child>left_hip_Link</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_hip_Link'>
+      <pose relative_to='lh'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.055101 -0.022328 -0.14329 0 -0 0</pose>
+        <mass>1.9263</mass>
+        <inertia>
+          <ixx>0.0027475</ixx>
+          <ixy>1.6208e-11</ixy>
+          <ixz>-2.5502e-05</ixz>
+          <iyy>0.0033682</iyy>
+          <iyz>8.3025e-07</iyz>
+          <izz>0.0013004</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_hip_Link_collision'>
+        <pose>0.055 0 -0.076 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.06 0.206</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_hip_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_hip_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lkp' type='prismatic'>
+      <pose relative_to='left_hip_Link'>0.0565 0 -0.192 0 -0 0</pose>
+      <parent>left_hip_Link</parent>
+      <child>left_knee_pri_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.1</lower>
+          <upper>0.1</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_knee_pri_Link'>
+      <pose relative_to='lkp'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.003862 0 -0.070547 0 -0 0</pose>
+        <mass>1.7288</mass>
+        <inertia>
+          <ixx>0.0013015</ixx>
+          <ixy>9.6218e-19</ixy>
+          <ixz>4.5849e-05</ixz>
+          <iyy>0.0013518</iyy>
+          <iyz>-1.1668e-18</iyz>
+          <izz>0.0012686</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_knee_pri_Link_collision'>
+        <pose>0 0 -0.01 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.06 0.04</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_knee_pri_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_knee_pri_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lk' type='revolute'>
+      <pose relative_to='left_knee_pri_Link'>-0.0565 0 -0.083 0 -0 0</pose>
+      <parent>left_knee_pri_Link</parent>
+      <child>left_knee_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_knee_Link'>
+      <pose relative_to='lk'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.055101 -0.022328 -0.14329 0 -0 0</pose>
+        <mass>1.9263</mass>
+        <inertia>
+          <ixx>0.0027475</ixx>
+          <ixy>1.6208e-11</ixy>
+          <ixz>-2.5502e-05</ixz>
+          <iyy>0.0033682</iyy>
+          <iyz>8.3025e-07</iyz>
+          <izz>0.0013004</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_knee_Link_collision'>
+        <pose>0.055 0 -0.065 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.06 0.23</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_knee_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_knee_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lap' type='prismatic'>
+      <pose relative_to='left_knee_Link'>0.0565 0 -0.192 0 -0 0</pose>
+      <parent>left_knee_Link</parent>
+      <child>left_ankle_pri_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.1</lower>
+          <upper>0.1</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_ankle_pri_Link'>
+      <pose relative_to='lap'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.003862 0 -0.070547 0 -0 0</pose>
+        <mass>1.7288</mass>
+        <inertia>
+          <ixx>0.0013015</ixx>
+          <ixy>-5.5659e-19</ixy>
+          <ixz>4.5849e-05</ixz>
+          <iyy>0.0013518</iyy>
+          <iyz>1.5099e-18</iyz>
+          <izz>0.0012686</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_ankle_pri_Link_collision'>
+        <pose>0 0 -0.06 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.06 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_ankle_pri_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_ankle_pri_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='la' type='revolute'>
+      <pose relative_to='left_ankle_pri_Link'>-0.0565 0 -0.083 0 -0 0</pose>
+      <parent>left_ankle_pri_Link</parent>
+      <child>left_ankle_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_ankle_Link'>
+      <pose relative_to='la'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.054123 0.015256 -0.051677 0 -0 0</pose>
+        <mass>0.72668</mass>
+        <inertia>
+          <ixx>0.0020048</ixx>
+          <ixy>-2.246e-18</ixy>
+          <ixz>-7.9275e-07</ixz>
+          <iyy>0.00089396</iyy>
+          <iyz>-9.1373e-07</iyz>
+          <izz>0.0027066</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_ankle_Link_collision'>
+        <pose>0.055 0.02 -0.06 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.22 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='left_ankle_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/left_ankle_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='ry' type='revolute'>
+      <pose relative_to='base_link'>0.1025 0 -0.162 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>right_yaw_Link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_yaw_Link'>
+      <pose relative_to='ry'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.002268 -0 -0.043526 0 -0 0</pose>
+        <mass>1.2202</mass>
+        <inertia>
+          <ixx>0.0010452</ixx>
+          <ixy>-2.0231e-18</ixy>
+          <ixz>-3.289e-05</ixz>
+          <iyy>0.0011182</iyy>
+          <iyz>6.9424e-19</iyz>
+          <izz>0.0010959</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_yaw_Link_collision'>
+        <pose>0 0 -0.007 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.08 0.03</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_yaw_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_yaw_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rh' type='revolute'>
+      <pose relative_to='right_yaw_Link'>0.0565 0 -0.054 0 -0 0</pose>
+      <parent>right_yaw_Link</parent>
+      <child>right_hip_Link</child>
+      <axis>
+        <xyz>-1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_hip_Link'>
+      <pose relative_to='rh'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.055101 -0.022328 -0.14329 0 -0 0</pose>
+        <mass>1.9263</mass>
+        <inertia>
+          <ixx>0.0027475</ixx>
+          <ixy>1.9779e-11</ixy>
+          <ixz>2.5502e-05</ixz>
+          <iyy>0.0033682</iyy>
+          <iyz>8.3026e-07</iyz>
+          <izz>0.0013004</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_hip_Link_collision'>
+        <pose>-0.055 0 -0.078 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.06 0.21</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_hip_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_hip_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rkp' type='prismatic'>
+      <pose relative_to='right_hip_Link'>-0.0565 0 -0.192 0 -0 0</pose>
+      <parent>right_hip_Link</parent>
+      <child>right_knee_pri_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.1</lower>
+          <upper>0.1</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_knee_pri_Link'>
+      <pose relative_to='rkp'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.003862 0 -0.070547 0 -0 0</pose>
+        <mass>1.7288</mass>
+        <inertia>
+          <ixx>0.0013015</ixx>
+          <ixy>6.3708e-19</ixy>
+          <ixz>-4.5849e-05</ixz>
+          <iyy>0.0013518</iyy>
+          <iyz>2.0769e-18</iyz>
+          <izz>0.0012686</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_knee_pri_Link_collision'>
+        <pose>0 0 -0.043 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.06 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_knee_pri_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_knee_pri_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rk' type='revolute'>
+      <pose relative_to='right_knee_pri_Link'>0.0565 0 -0.083 0 -0 0</pose>
+      <parent>right_knee_pri_Link</parent>
+      <child>right_knee_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_knee_Link'>
+      <pose relative_to='rk'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.055101 -0.022328 -0.14329 0 -0 0</pose>
+        <mass>1.9263</mass>
+        <inertia>
+          <ixx>0.0027475</ixx>
+          <ixy>1.9779e-11</ixy>
+          <ixz>2.5502e-05</ixz>
+          <iyy>0.0033682</iyy>
+          <iyz>8.3026e-07</iyz>
+          <izz>0.0013004</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_knee_Link_collision'>
+        <pose>-0.055 0 -0.097 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.12 0.06 0.17</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_knee_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_knee_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rap' type='prismatic'>
+      <pose relative_to='right_knee_Link'>-0.0565 0 -0.192 0 -0 0</pose>
+      <parent>right_knee_Link</parent>
+      <child>right_ankle_pri_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-0.1</lower>
+          <upper>0.1</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_ankle_pri_Link'>
+      <pose relative_to='rap'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.003862 0 -0.070547 0 -0 0</pose>
+        <mass>1.7288</mass>
+        <inertia>
+          <ixx>0.0013015</ixx>
+          <ixy>5.2116e-19</ixy>
+          <ixz>-4.5849e-05</ixz>
+          <iyy>0.0013518</iyy>
+          <iyz>2.0394e-18</iyz>
+          <izz>0.0012686</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_ankle_pri_Link_collision'>
+        <pose>0 0 -0.06 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.06 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_ankle_pri_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_ankle_pri_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='ra' type='revolute'>
+      <pose relative_to='right_ankle_pri_Link'>0.0565 0 -0.083 0 -0 0</pose>
+      <parent>right_ankle_pri_Link</parent>
+      <child>right_ankle_Link</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-10</lower>
+          <upper>10</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_ankle_Link'>
+      <pose relative_to='ra'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.054123 0.015256 -0.051677 0 -0 0</pose>
+        <mass>0.72668</mass>
+        <inertia>
+          <ixx>0.0020048</ixx>
+          <ixy>1.7327e-17</ixy>
+          <ixz>7.9275e-07</ixz>
+          <iyy>0.00089396</iyy>
+          <iyz>-9.1373e-07</iyz>
+          <izz>0.0027066</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_ankle_Link_collision'>
+        <pose>-0.055 0.02 -0.06 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.14 0.22 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='right_ankle_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bipedv5/meshes/right_ankle_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

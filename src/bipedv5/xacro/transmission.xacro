@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<robot>
+  <transmission name="ly_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="ly">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="ly_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="lh_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="lh">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="lh_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="lkp_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="lkp">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="lkp_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="lk_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="lk">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="lk_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+   <transmission name="lap_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="lap">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="lap_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+   <transmission name="la_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="la">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="la_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+  
+
+  <transmission name="ry_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="ry">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="ry_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="rh_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rh">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rh_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="rkp_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rkp">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rkp_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="rk_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rk">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rk_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+  <transmission name="rap_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="rap">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="rap_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+
+   <transmission name="ra_tran">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="ra">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="ra_joint_motor">
+          <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+          <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
+</robot>

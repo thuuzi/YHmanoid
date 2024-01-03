@@ -1,0 +1,223 @@
+[
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls -std=c++11 -o gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_command.dir/src/bipedv5_command.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/bipedv5_command.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/bipedv5_command.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_command.dir/src/lipm_mpc.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/lipm_mpc.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/lipm_mpc.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_command.dir/src/footPlanner.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/footPlanner.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/footPlanner.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_command.dir/src/LIPMPlanner.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/LIPMPlanner.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/LIPMPlanner.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_command.dir/src/LIPMDynamics.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/LIPMDynamics.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/LIPMDynamics.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_plan_node.dir/src/main.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/main.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/main.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_plan_node.dir/src/lipm_mpc.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/lipm_mpc.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/lipm_mpc.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_plan_node.dir/src/footPlanner.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/footPlanner.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/footPlanner.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_plan_node.dir/src/LIPMPlanner.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/LIPMPlanner.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/LIPMPlanner.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_plan\\\" -I../bipedv5_plan/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -std=c++11 -o bipedv5_plan/CMakeFiles/bipedv5_plan_node.dir/src/LIPMDynamics.cpp.o -c /home/jack/bipedv5/src/bipedv5_plan/src/LIPMDynamics.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_plan/src/LIPMDynamics.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -o bipedv5_control/CMakeFiles/swingfoot_test.dir/src/swingfoot_test.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/swingfoot_test.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/swingfoot_test.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -o bipedv5_control/CMakeFiles/drive_gazebo.dir/src/drive_gazebo.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/drive_gazebo.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/drive_gazebo.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -Dbipedv5_control_EXPORTS -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g -fPIC   -o bipedv5_control/CMakeFiles/bipedv5_control.dir/src/inv_kine.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/inv_kine.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/inv_kine.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -Dbipedv5_control_EXPORTS -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g -fPIC   -o bipedv5_control/CMakeFiles/bipedv5_control.dir/src/cubic_spline.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/cubic_spline.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/cubic_spline.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -Dbipedv5_control_EXPORTS -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g -fPIC   -o bipedv5_control/CMakeFiles/bipedv5_control.dir/src/swingfoot_trajectory.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/swingfoot_trajectory.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/swingfoot_trajectory.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -Dbipedv5_control_EXPORTS -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g -fPIC   -o bipedv5_control/CMakeFiles/bipedv5_control.dir/src/leg.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/leg.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/leg.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_control\\\" -I../bipedv5_control/include -I/home/jack/bipedv3/devel/include -I/home/jack/bipedv3/src/actuatorcontroller_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -o bipedv5_control/CMakeFiles/drive.dir/src/drive.cpp.o -c /home/jack/bipedv5/src/bipedv5_control/src/drive.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_control/src/drive.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_wbc\\\" -Dbipedv5_wbc_EXPORTS -I../bipedv5_wbc/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o bipedv5_wbc/CMakeFiles/bipedv5_wbc.dir/src/humanoid_wbc.cpp.o -c /home/jack/bipedv5/src/bipedv5_wbc/src/humanoid_wbc.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_wbc/src/humanoid_wbc.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_wbc\\\" -Dbipedv5_wbc_EXPORTS -I../bipedv5_wbc/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/usr/include/eigen3  -g -fPIC   -std=c++11 -o bipedv5_wbc/CMakeFiles/bipedv5_wbc.dir/src/pin_wrapper.cpp.o -c /home/jack/bipedv5/src/bipedv5_wbc/src/pin_wrapper.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_wbc/src/pin_wrapper.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_wbc\\\" -I../bipedv5_wbc/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/usr/include/eigen3  -g   -std=c++11 -o bipedv5_wbc/CMakeFiles/whole_body_ik_node_humanoid.dir/src/whole_body_ik_humanoid_driver.cpp.o -c /home/jack/bipedv5/src/bipedv5_wbc/src/whole_body_ik_humanoid_driver.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_wbc/src/whole_body_ik_humanoid_driver.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_wbc\\\" -I../bipedv5_wbc/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/usr/include/eigen3  -g   -std=c++11 -o bipedv5_wbc/CMakeFiles/whole_body_ik_node_humanoid.dir/src/humanoid_wbc.cpp.o -c /home/jack/bipedv5/src/bipedv5_wbc/src/humanoid_wbc.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_wbc/src/humanoid_wbc.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_wbc\\\" -I../bipedv5_wbc/include -Idevel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jack/anaconda3/envs/py38/include/eigen3 -I/usr/include/eigen3  -g   -std=c++11 -o bipedv5_wbc/CMakeFiles/whole_body_ik_node_humanoid.dir/src/pin_wrapper.cpp.o -c /home/jack/bipedv5/src/bipedv5_wbc/src/pin_wrapper.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_wbc/src/pin_wrapper.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_mpc_control_node.dir/src/control_mpc.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/control_mpc.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/control_mpc.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_mpc_control_node.dir/src/postureStabilizer.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/postureStabilizer.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/postureStabilizer.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_mpc_control_node.dir/src/ZMPDistributor.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/ZMPDistributor.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/ZMPDistributor.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_mpc_control_node.dir/src/LeakyIntegrator.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/LeakyIntegrator.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/LeakyIntegrator.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_stability_node.dir/src/main.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/main.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/main.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_stability_node.dir/src/control.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/control.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/control.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_stability_node.dir/src/postureStabilizer.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/postureStabilizer.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/postureStabilizer.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_stability_node.dir/src/ZMPDistributor.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/ZMPDistributor.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/ZMPDistributor.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5_stability\\\" -I../bipedv5_stability/include -Idevel/include -I../bipedv5_wbc/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -std=c++11 -o bipedv5_stability/CMakeFiles/bipedv5_stability_node.dir/src/LeakyIntegrator.cpp.o -c /home/jack/bipedv5/src/bipedv5_stability/src/LeakyIntegrator.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5_stability/src/LeakyIntegrator.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DBOOST_MPL_LIMIT_LIST_SIZE=30 -DBOOST_MPL_LIMIT_VECTOR_SIZE=30 -DHPP_FCL_HAS_OCTOMAP -DHPP_FCL_HAVE_OCTOMAP -DOCTOMAP_MAJOR_VERSION=1 -DOCTOMAP_MINOR_VERSION=9 -DOCTOMAP_PATCH_VERSION=8 -DPINOCCHIO_WITH_HPP_FCL -DPINOCCHIO_WITH_URDFDOM -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5\\\" -I../bipedv5/include -I/home/jack/catkin_ws/devel/include -I/home/jack/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /opt/ros/noetic/include -isystem /home/jack/anaconda3/envs/py38/include/eigen3 -isystem /home/jack/anaconda3/envs/py38/include  -g   -o bipedv5/CMakeFiles/sensor.dir/src/sensor.cpp.o -c /home/jack/bipedv5/src/bipedv5/src/sensor.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5/src/sensor.cpp"
+},
+
+{
+  "directory": "/home/jack/bipedv5/src/build",
+  "command": "/usr/bin/clang++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"bipedv5\\\" -I../bipedv5/include -I/home/jack/catkin_ws/devel/include -I/home/jack/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -I/home/jack/anaconda3/envs/py38/include/eigen3  -g   -o bipedv5/CMakeFiles/drive_gz.dir/src/drive_gz.cpp.o -c /home/jack/bipedv5/src/bipedv5/src/drive_gz.cpp",
+  "file": "/home/jack/bipedv5/src/bipedv5/src/drive_gz.cpp"
+}
+]

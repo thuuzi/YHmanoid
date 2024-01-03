@@ -1,0 +1,2 @@
+set(lipm_msgs_MESSAGE_FILES "msg/TrajectoryPoints.msg;msg/StepTarget.msg;msg/FootStepPlan.msg;msg/MPCTraj.msg;msg/MotionPlanAction.msg;msg/MotionPlanActionGoal.msg;msg/MotionPlanActionResult.msg;msg/MotionPlanActionFeedback.msg;msg/MotionPlanGoal.msg;msg/MotionPlanResult.msg;msg/MotionPlanFeedback.msg;msg/MotionControlAction.msg;msg/MotionControlActionGoal.msg;msg/MotionControlActionResult.msg;msg/MotionControlActionFeedback.msg;msg/MotionControlGoal.msg;msg/MotionControlResult.msg;msg/MotionControlFeedback.msg")
+set(lipm_msgs_SERVICE_FILES "")

@@ -1,0 +1,25 @@
+#步态参数
+step_period : 1.5  #步态周期
+double_support_time : 0.7 #双腿支撑时长
+step_len : 0.05    #步长
+step_sa : 0.05      #
+ini_height : -0.5    #初始高度
+step_height : 0.03    #抬腿高度
+ini_len : 0.02    #初始x位置
+StepNum : 1000
+#运动学杆件长度
+L1 : 0.275
+L2 : 0.275
+#轨迹插值时间
+pause_time : 5000  #循环sleep时间(微秒
+dt : 0.005
+T_ini: 3.0
+#电机传动比(1控制量对应度数)
+r0 : 0.00610865
+r1 : 10.0
+r2 : 3.5643564356435
+#模式选择
+echo : false
+ini : true
+static: false
+Heel_Toe_walk: false
