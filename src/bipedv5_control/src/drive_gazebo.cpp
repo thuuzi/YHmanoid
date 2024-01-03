@@ -17,7 +17,7 @@ Drive::Drive(){
 	pub_rkp = n.advertise<std_msgs::Float64>("/bipedv5/rkp/command", 1);
 	pub_rk = n.advertise<std_msgs::Float64>("/bipedv5/rk/command", 1);
 	pub_rap = n.advertise<std_msgs::Float64>("/bipedv5/rap/command", 1);
-	pub_ra = n.advertise<std_msgs::Float64>("/bipedv5/ra/command", 1);
+	pub_ra = n.advertise<std_msgs::Float64>("/bipedv5/ra/command", 12);
 	
 }
 
