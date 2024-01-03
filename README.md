@@ -1,4 +1,5 @@
 # Bipedv5
+bipedv5 used LIPM to motion plan
 # 编译流程
 1.安装Pinocchio: sudo apt install ros-$ROS_DISTRO-pinocchio
 2.安装qpmad: git clone ...; mkdir build && cd build && cmake .. && make -j4 && sudo make install
